@@ -1,4 +1,4 @@
-function params = params_JEG_ccr4bp_real()
+function params = params_JEG_pccr4bp()
 %==========================================================================
 %
 % Defines parameters for the Jupiter–Europa–Ganymede CCR4BP model.
@@ -57,5 +57,19 @@ function params = params_JEG_ccr4bp_real()
     params.ode.options = odeset( ...
         'RelTol', 1e-13, ...
         'AbsTol', 1e-13);
+
+    %-------------------------------
+    % Model definition
+    %-------------------------------
+    params.model.name = 'PCCR4BP';
+    params.model.formulation = 'hamiltonian';
+    params.model.frame = 'synodic';
+    params.model.units = 'nd';
+
+    %-------------------------------
+    % Functions
+    %-------------------------------
+    params.fun.eom = @eom_pccr4bp;
+    params.fun.integrate = @integrate_pccr4bp;
     
 end
