@@ -1,4 +1,4 @@
-function dY_dt_vec = eom_stm_ccr4bp_H(t, Y_vec, params)
+function dY_dt_vec = eom_ext_pccr4bp(t, Y_vec, params)
 %==========================================================================
 %
 % Computes CCR4BP Hamiltonian equations of motion together with STM dynamics.

@@ -1,4 +1,4 @@
-function A = jacobian_ccr4bp_H(t, x_vec, params)
+function A = jacobian_pccr4bp(t, x_vec, params)
 %==========================================================================
 %
 % Computes Jacobian matrix A = df/dx for CCR4BP Hamiltonian system.

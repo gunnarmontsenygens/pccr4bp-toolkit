@@ -1,4 +1,4 @@
-function dx_dt_vec =  eom_ccr4bp_H(t, x_vec, params)
+function dx_dt_vec =  eom_pccr4bp(t, x_vec, params)
 %==========================================================================
 %
 % Computes planar CCR4BP Hamiltonian equations of motion in synodic frame.
